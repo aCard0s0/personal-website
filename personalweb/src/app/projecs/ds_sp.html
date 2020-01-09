@@ -1,0 +1,90 @@
+<app-menu></app-menu>
+
+<div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex d-column">
+        <div class="my-auto">
+
+            <h2 class="mb-5">Santa Claus Problem</h2>
+
+            <p class="lead mb-5">
+                The main goal of this project, Santa Claus Problem is to have a multi-thread apllication running on
+                several independent systems.
+                The <a href="https://www.youtube.com/watch?v=pqO6tKN2lc4">Santa Claus Problem</a> it is a thread
+                synchronization computer programming problem and it is solve using semaphores and mutexes.
+            </p>
+            
+            <p class="lead mb-5">
+                The following will explain firstly the active indentities (Threads), Santa, Gnomes and Reindeers lifecycles.
+            </p>
+
+            <div class="container mb-5">
+                <div class="subheading mb-3">Santa</div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <img src="./../../assets/imgs/projects/santa_lifecycle.png">
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <ul class="fa-ul mb-0">
+                            <li><i>RESTING</i> - block state, unblocked by the Gome when group of 3 <i>need advice</i> and unblocked
+                                when last Reindeer arrives (<i>go back to the statle</i>).</li>
+                            <li><i>DECIDING_WHAT_TO_DO</i> - transit state</li>
+                            <li><i>MEETING_THE_ELVES</i> - block state, unblock by enter the house</li>
+                            <li><i>DISTRIBUTING_GIFTS</i> - block state</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container mb-5">
+                <div class="subheading mb-3">Gnomes</div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <ul class="fa-ul mb-0">
+                            <li><i>WORKING</i> - </li>
+                            <li><i>WISHING_TO_MEET_SANTA</i> - </li>
+                            <li><i>JOINING_A_GROUP</i> - </li>
+                            <li><i>CONSULTING_WITH_SANTA</i> - </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <img src="./../../assets/imgs/projects/gnomos_lifecycle.png" >
+                    </div>
+                </div>
+            </div>
+            <div class="container mb-5">
+                <div class="subheading mb-3">Reindeer</div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <img src="./../../assets/imgs/projects/reindeers_lifecycle.png" style="background-size: cover;">
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <ul class="fa-ul mb-0">
+                            <li><i>IN_HOLIDAYS</i> - </li>
+                            <li><i>AT_THE_STABLE</i> - </li>
+                            <li><i>PULLING_THE_SLEDGE</i> - </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="lead mb-5">
+                The threads presented before must act on data structures which in turn are avaiable on a share memory, presented below.<br /><br />
+                <img src="./../../assets/imgs/projects/ds_sp-share_memory.png">
+            </p>
+            <p class="lead mb-5">
+                The syncronization mecanism in place is through <a href="https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/Semaphore.html">semaphores</a>.<br />
+                The next image presents a log example produced after execution.<br /><br />
+                <img src="./../../assets/imgs/projects/log_example.png">
+            </p>
+            <p class="lead mb-5">
+                Local implementation as a standalone Netbeans project can be found on my <a href="">>GitHub repository</a>. <br />
+            </p>
+
+
+            <p class="lead mb-5">
+                Next sections presents the same problem but implemented in a distributed envoriment with <a href="https://docs.oracle.com/javase/tutorial/rmi/overview.html">Remote Method Invocation (RMI) architecture</a>.
+            </p>
+        </div>
+        
+    </section>
+</div>

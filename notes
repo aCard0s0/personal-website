@@ -1,0 +1,5 @@
+
+firebase login
+firebase list
+firebase use [project]
+firebase deploy --only hosting
